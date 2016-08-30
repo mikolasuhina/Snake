@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mobile_challenge.snake.Settings"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:id="@+id/sett_back"
+            android:layout_gravity="top|left" />
+
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal">
+
+        <mobile_challenge.snake.TextViewWithFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LEVEL"
+            android:id="@+id/textView2" />
+
+        <NumberPicker
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numberPicker" />
+
+        <ToggleButton
+            android:background="@drawable/sel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff=""
+            android:textOn=""
+            android:id="@+id/toggleButton" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal">
+
+        <mobile_challenge.snake.TextViewWithFont
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ORIENTATION "
+            android:id="@+id/orient" />
+
+        <ToggleButton
+            android:background="@drawable/screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff=""
+            android:textOn=""
+            android:id="@+id/or" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="mobile_challenge.snake.MainActivity">
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:foregroundGravity="center_vertical|center_horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="0.8"
+            android:textSize="30sp"
+
+            android:background="@drawable/bg_title"
+            android:id="@+id/textfild"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="center"
+
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:id="@+id/line"
+        android:background="@drawable/bg_dialog"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal">
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="PLAY"
+            android:id="@+id/button"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_margin="10dp" />
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:id="@+id/line1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_margin="10dp">
+
+        </LinearLayout>
+
+        <TextView
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+
+            android:id="@+id/score"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_gravity="center" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
